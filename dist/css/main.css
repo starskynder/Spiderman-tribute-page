@@ -1,3 +1,5 @@
+/* --- Variables --- */
+/* ---- Mixins --- */
 /* --- General styles --- */
 * {
   -webkit-box-sizing: border-box;
@@ -6,3 +8,41 @@
 img {
   max-width: 100%;
   height: auto; }
+
+/* -------- Navigation ---------- */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+
+.nav-list {
+  width: 100%;
+  list-style-type: none;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.nav-menu {
+  background-color: #ee2a42;
+  border: 8px solid #000;
+  margin-left: auto;
+  margin-right: 1em; }
+
+.nav-menu__lines {
+  display: block;
+  width: 40px;
+  height: 6px;
+  margin: 5px;
+  background-color: #000; }
