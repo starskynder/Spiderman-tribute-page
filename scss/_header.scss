@@ -1,0 +1,48 @@
+/* ---Header --- */
+header {
+  @include flex-col;
+
+  position: relative;
+}
+
+#img-div {
+  border-radius: 10px;
+}
+
+.hero-img {
+  display: block;
+}
+
+.primary-heading {
+  font-family: "Bigelow Rules", cursive;
+  margin: 0;
+  font-size: 5.3em;
+  letter-spacing: 5px;
+  position: absolute;
+  text-shadow: 0 0 16px $primary-color;
+  bottom: 3em;
+  top: 65%;
+  left: 50%;
+  color: $solid-black;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+figure {
+  margin: 0;
+  position: relative;
+}
+
+figcaption {
+  padding: 1em;
+  max-width: 50em;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translateX(-50%);
+  color: $primary-color;
+  font-family: "Bigelow Rules", cursive;
+  font-size: 3em;
+}

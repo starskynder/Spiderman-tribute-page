@@ -3,19 +3,12 @@ nav {
   @include flex-row;
 }
 
-.nav-list {
-  width: 100%;
-  list-style-type: none;
-  padding: 1em;
-
-  @include flex-col;
-}
-
 .nav-menu {
   background-color: $spidey-red;
   border: 8px solid $solid-black;
   margin-left: auto;
   margin-right: 1em;
+  margin-top: 10px;
 }
 
 .nav-menu__lines {
@@ -24,4 +17,19 @@ nav {
   height: 6px;
   margin: 5px;
   background-color: $solid-black;
+}
+
+.nav-list {
+  @include flex-col;
+
+  width: 100%;
+  list-style-type: none;
+  padding: 1em;
+  background-color: $spidey-red;
+  display: none;
+}
+
+.nav-list__link {
+  text-decoration: none;
+  color: $solid-black;
 }
