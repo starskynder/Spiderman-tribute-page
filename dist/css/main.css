@@ -65,26 +65,24 @@ a {
   a:focus, a:hover {
     text-decoration: underline; }
 
+.more {
+  text-align: center; }
+  .more p {
+    margin-bottom: 0;
+    border-color: #000; }
+  .more h3 {
+    background-color: #043655;
+    -webkit-box-shadow: 0 0 0 4px #043655;
+    box-shadow: 0 0 0 4px #043655; }
+
 .friends-and-foe p {
   border-color: #0874b7; }
-  .friends-and-foe p:before {
+  .friends-and-foe p::before {
     content: url(../images/spiderblue.png); }
   .friends-and-foe p h3 {
     background-color: #043655;
     -webkit-box-shadow: 0 0 0 4px #043655;
     box-shadow: 0 0 0 4px #043655; }
-
-.more {
-  text-align: center; }
-
-.more p {
-  margin-bottom: 0;
-  border-color: #000; }
-
-.more h3 {
-  background-color: #043655;
-  -webkit-box-shadow: 0 0 0 4px #043655;
-  box-shadow: 0 0 0 4px #043655; }
 
 footer {
   display: -webkit-box;
@@ -198,6 +196,7 @@ header {
 .primary-heading {
   font-family: "Bigelow Rules", cursive;
   margin: 0;
+  margin-top: 0.2em;
   font-size: 5.3em;
   letter-spacing: 5px;
   position: absolute;

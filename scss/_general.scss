@@ -28,7 +28,6 @@ p {
 
   &::before {
     content: url(../images/spider.png);
-
     display: inline-block;
   }
 }
@@ -68,24 +67,9 @@ a {
   }
 }
 
-.friends-and-foe p {
-  &:before {
-    content: url(../images/spiderblue.png);
-  }
-
-  h3 {
-    background-color: darken($spidey-blue, 20);
-    box-shadow: 0 0 0 4px darken($spidey-blue, 20);
-  }
-
-  border-color: $spidey-blue;
-}
-
 .more {
   text-align: center;
-}
 
-.more {
   p {
     margin-bottom: 0;
     border-color: $solid-black;
@@ -95,6 +79,19 @@ a {
     background-color: darken($spidey-blue, 20);
     box-shadow: 0 0 0 4px darken($spidey-blue, 20);
   }
+}
+
+.friends-and-foe p {
+  &::before {
+    content: url(../images/spiderblue.png);
+  }
+
+  h3 {
+    background-color: darken($spidey-blue, 20);
+    box-shadow: 0 0 0 4px darken($spidey-blue, 20);
+  }
+
+  border-color: $spidey-blue;
 }
 
 footer {
