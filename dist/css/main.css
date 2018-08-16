@@ -102,7 +102,7 @@ footer {
   footer a {
     color: #fff; }
     footer a:visited {
-      color: #043655; }
+      color: #065586; }
 
 /* -------- Navigation ---------- */
 nav {
@@ -119,14 +119,17 @@ nav {
   border: 8px solid #000;
   margin-left: auto;
   margin-right: 1em;
-  margin-top: 10px; }
+  margin-top: 10px;
+  padding: 0.3em; }
 
 .nav-menu__lines {
   display: block;
   width: 40px;
   height: 6px;
   margin: 5px;
-  background-color: #000; }
+  background-color: #000;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out; }
 
 .nav-list {
   display: -webkit-box;
@@ -142,12 +145,35 @@ nav {
   width: 100%;
   list-style-type: none;
   padding: 1em;
-  background-color: #ee2a42;
-  display: none; }
+  display: none;
+  font-size: 2em; }
+  .nav-list a {
+    color: #fff; }
+    .nav-list a:visited {
+      color: #fff; }
 
 .nav-list__link {
   text-decoration: none;
   color: #000; }
+
+.js-nav-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.js-menu__lines:nth-of-type(1) {
+  -webkit-transform: rotate(-45deg) translate(-9px, 10px);
+  transform: rotate(-45deg) translate(-9px, 10px); }
+
+.js-menu__lines:nth-of-type(2) {
+  opacity: 0; }
+
+.js-menu__lines:nth-of-type(3) {
+  -webkit-transform: rotate(45deg) translate(-5px, -8px);
+  transform: rotate(45deg) translate(-5px, -8px); }
+
+.js-nav {
+  background-color: #065586; }
 
 /* ---Header --- */
 header {
