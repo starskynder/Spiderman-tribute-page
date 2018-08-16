@@ -14,16 +14,17 @@
 
 <body id="main">
   <nav>
-    <button class="nav-menu">
+    <button class="nav-menu" aria-expanded="false" aria-controls="menu-list" aria-label="navigation menu">
       <span class="nav-menu__lines"></span>
       <span class="nav-menu__lines"></span>
       <span class="nav-menu__lines"></span>
     </button>
-    <ul class="nav-list">
+    <ul class="nav-list" id="menu-list" hidden>
       <li class="nav-list__item"><a href="" class="nav-list__link">Home</a></li>
-      <li class="nav-list__item"><a href="" class="nav-list__link">About</a></li>
-      <li class="nav-list__item"><a href="" class="nav-list__link">Story</a></li>
-      <li class="nav-list__item"><a href="" class="nav-list__link">Credits</a></li>
+      <li class="nav-list__item"><a href="#tribute-info" class="nav-list__link">The Spider</a></li>
+      <li class="nav-list__item"><a href="#friends-and-foes" class="nav-list__link">Friends and Foes</a></li>
+      <li class="nav-list__item"><a href="#authors" class="nav-list__link">The Authors</a></li>
+      <li class="nav-list__item"><a href="#more" class="nav-list__link">More</a></li>
 
     </ul>
   </nav>
@@ -48,8 +49,11 @@
       <h3>The Spider</h3>
       <p>
 
-        Spider-Man is a fictional superhero created by writer-editor Stan Lee and writer-artist Steve Ditko for Marvel Comics. He
-        first appeared in the anthology comic book Amazing Fantasy #15 (August 1962) in the Silver Age of Comic Books.
+        Spider-Man is a fictional superhero created by writer-editor <a href="https://en.wikipedia.org/wiki/Stan_Lee" target="_blank">
+          Stan Lee</a>
+        and writer-artist <a href="https://en.wikipedia.org/wiki/Steve_Ditko" target="_blank">Steve Ditko</a> for Marvel
+        Comics. He first appeared in the anthology comic book Amazing Fantasy #15 (August 1962) in the Silver Age of Comic
+        Books.
       </p>
       <p>
         The real identity of Spiderman is Peter Parker, an orphan being raised by his Aunt May and Uncle Ben in New York City after
@@ -66,21 +70,21 @@
         uncle, he learns to use his power to fight crime.
       </p>
     </section>
-    <section class="friends-and-foe">
+    <section class="friends-and-foe" id="friends-and-foes">
       <h3>Friends and Foes
-        </h2>
-        <p>
-          Peter friends and classmates are Flash Thompson and Harry Osborn.
-        </p>
-        <p>
-          During the story Peter also has romantic insterests for Gwen Stacey and Mary Jane Watson.
-        </p>
-        <p>
-          During his fight to the crime Spiderman encounters many villains, the most famous of whom being Doctor Octopus, Green Goblin,
-          Rhino, Shocker, Sandman, Carnage and Venom.
-        </p>
+      </h3>
+      <p>
+        Peter friends and classmates are Flash Thompson and Harry Osborn.
+      </p>
+      <p>
+        During the story Peter also has romantic insterests for Gwen Stacey and Mary Jane Watson.
+      </p>
+      <p>
+        During his fight to the crime Spiderman encounters many villains, the most famous of whom being Doctor Octopus, Green Goblin,
+        Rhino, Shocker, Sandman, Carnage and Venom.
+      </p>
     </section>
-    <section>
+    <section id="authors">
       <h3>The Authors</h3>
       <p>
         Stan Lee and Steve Dikto are the credited authors for Spiderman.
@@ -88,7 +92,7 @@
       <p> Many artists have contributed to the illustrations of the carchater like: John Romita, Todd McFarlane , John Buscema
         and Ross Andru.</p>
     </section>
-    <section class="more">
+    <section class="more" id="more">
       <h3>More on Spidey</h3>
       <p>
         You can find more on Spiderman on the <a href="https://en.wikipedia.org/wiki/Spider-Man" id="tribute-link" target="_blank">Spiderman
@@ -100,14 +104,16 @@
   </main>
   <footer>
     <div>
-      Spiderman Tribute page and Fanarts by <a href="https://github.com/starskynder" target="_blank">starskynder</a> Icons
+      Spiderman Tribute page and Fanarts by <a href="https://github.com/starskynder" target="_blank">starskynder</a>. Icons
       made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
       is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
-        3.0 BY</a> Text by <a href="https://en.wikipedia.org/wiki/Spider-Man">Wikipedia</a>. Spiderman is a Marvel carachter,
-      all copyrights on Spiderman are of <a href="https://www.marvel.com/">Marvel</a> . This is a fanpage.
+        3.0 BY</a>. Text by <a href="https://en.wikipedia.org/wiki/Spider-Man">Wikipedia</a>. Spiderman and Spiderman character
+      names are trademarks of
+      <a href="https://www.marvel.com/">Marvel</a>. No copyright infringement intended. This is a fanpage.
     </div>
   </footer>
 </body>
+<script src="js/main.js"></script>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 </html>
