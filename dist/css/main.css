@@ -79,10 +79,11 @@ a {
   border-color: #0874b7; }
   .friends-and-foe p::before {
     content: url(../images/spiderblue.png); }
-  .friends-and-foe p h3 {
-    background-color: #043655;
-    -webkit-box-shadow: 0 0 0 4px #043655;
-    box-shadow: 0 0 0 4px #043655; }
+
+.friends-and-foe h3 {
+  background-color: #043655;
+  -webkit-box-shadow: 0 0 0 4px #043655;
+  box-shadow: 0 0 0 4px #043655; }
 
 footer {
   display: -webkit-box;
